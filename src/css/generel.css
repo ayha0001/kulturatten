@@ -11,4 +11,14 @@ img {
   display: block;
 }
 
-/**********/
+/*variabler*/
+
+:root {
+  --accent: #ffad41;
+  --baggrund1: #000522;
+  --baggrund2: #2f365b;
+  --cards: #a1a2bd;
+  --fontfarve: #ffffff;
+  --font1: montserrat;
+  --font2: roboto;
+}
