@@ -6,6 +6,8 @@ Her står vores fælles retningslinjer for dette projekt.
 
 Vores Astro projekt består af de følgende mapper og filer:
 
+```text
+
 /
 ├── public/
 │ └── favicon.svg
@@ -22,24 +24,16 @@ Vores Astro projekt består af de følgende mapper og filer:
 │ └── index.astro
 └── package.json
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
 ```
 
 Fonte bliver hentet via en embed kode og embeddes derefter i html head'en i layout.astro.
 
 ## Navngivning
 
+```
 Filer bliver navngivet efter hvad siden er til/handler om. Så hvis man laver en component fil til headeren eller hero section, kalder man den header.astro, hero.astro osv.
 Component filerne navngives med stort forbogstav og resten småt og helst enkeltord.
+```
 
 ## Branches
 
