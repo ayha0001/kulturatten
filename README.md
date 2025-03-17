@@ -22,6 +22,18 @@ Vores Astro projekt består af de følgende mapper og filer:
 │ └── index.astro
 └── package.json
 
+```text
+/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   └── pages/
+│       └── index.astro
+└── package.json
+```
+
 Fonte bliver hentet via en embed kode og embeddes derefter i html head'en i layout.astro.
 
 ## Navngivning
