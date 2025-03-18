@@ -1,3 +1,8 @@
+---
+import "../css/generel.css";
+import headerImage from "../assets/header.svg";
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -6,6 +11,17 @@
     <title>Document</title>
   </head>
   <body>
-    <slot />
+    <header>
+      <img src={headerImage.src} alt="Header image" />
+    </header>
+    ,<main>
+      <slot />
+    </main>
   </body>
 </html>
+
+<style>
+  header img {
+    width: 100%;
+  }
+</style>
