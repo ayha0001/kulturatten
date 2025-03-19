@@ -12,7 +12,6 @@ img {
 }
 
 /*variabler*/
-
 :root {
   --accent: #ffad41;
   --baggrund1: #000522;
@@ -21,4 +20,14 @@ img {
   --fontfarve: #ffffff;
   --font1: montserrat;
   --font2: roboto;
+}
+
+/*generelle margin indstillinger osv*/
+body {
+  margin: 20px;
+}
+@media (min-width: 800px) {
+  body {
+    margin: 40px;
+  }
 }

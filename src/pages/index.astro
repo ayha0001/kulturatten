@@ -1,8 +1,56 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import "../css/generel.css";
+import Card from "../components/Card.astro";
 ---
 
-<Layout title="Forside">
-  <h1>skriv her</h1>
+<Layout titel="Forside">
+  <div class="cardwrapper">
+    <Card
+      titel="KOM INDENFOR PÅ RÅDHUSET"
+      beskrivelse="Oplev Helsingørs historiske rådhus i aftenlyset"
+      billede="https://placehold.co/600x400"
+      emne="Kultur"
+      emnedag="21"
+      emnemaaned="AUG"
+      emneaar="2025"
+    />
+    <Card
+      titel="KAST KANEL PÅ EN SVENSKER"
+      beskrivelse="Lad svenskerne smage på vores krydderier"
+      billede="https://placehold.co/600x400"
+      emne="Scene"
+      emnedag="21"
+      emnemaaned="AUG"
+      emneaar="2025"
+    />
+    <Card
+      titel="SPØGELSE­VANDRING"
+      beskrivelse="Oplev Kronborgs mørke gange og hør fortællinger om de hvileløse sjæle"
+      billede="https://placehold.co/600x400"
+      emne="Andet"
+      emnedag="21"
+      emnemaaned="AUG"
+      emneaar="2025"
+    />
+    <Card
+      titel="LIVEGRAFFITI I BAGGÅRDENE"
+      beskrivelse="Se kunstnere skabe værker i realtid på byens vægge"
+      billede="https://placehold.co/600x400"
+      emne="Kunst"
+      emnedag="21"
+      emnemaaned="AUG"
+      emneaar="2025"
+    />
+  </div>
 </Layout>
+
+<style>
+  .cardwrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+</style>
