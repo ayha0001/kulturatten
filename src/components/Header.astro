@@ -1,5 +1,5 @@
 ---
-import headerlines from "../assets/header.svg";
+import "../assets/header.svg";
 import logo from "../assets/logo-white.svg";
 ---
 
@@ -128,3 +128,22 @@ import logo from "../assets/logo-white.svg";
     display: block;
   }
 </style>
+
+<script client:load>
+  const logo = document.querySelector(".logo_img");
+  const burger = document.querySelector(".burger");
+
+  function setBurgerHeight() {
+    const logoHeight = logo.clientHeight;
+    burger.style.height = `${logoHeight}px`;
+  }
+
+  window.addEventListener("load", setBurgerHeight);
+  window.addEventListener("resize", setBurgerHeight);
+
+  burger.addEventListener("click", () => {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("active");
+    burger.classList.toggle("active");
+  });
+</script>
