@@ -1,4 +1,5 @@
 ---
+import Header from "../components/Header.astro";
 const { titel } = Astro.props;
 ---
 
@@ -22,6 +23,7 @@ const { titel } = Astro.props;
     />
   </head>
   <body>
+    <Header />
     <main>
       <slot />
     </main>
