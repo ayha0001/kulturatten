@@ -23,11 +23,11 @@ img {
 }
 
 /*generelle margin indstillinger osv*/
-body {
+main {
   margin: 20px;
 }
 @media (min-width: 800px) {
-  body {
+  main {
     margin: 40px;
   }
 }
